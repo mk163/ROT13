@@ -1,13 +1,12 @@
 
 def rand
 num = Random.rand(13) + 1
-puts "num = " + num.to_s
+puts "今回はROT" + num.to_s + "です"
 return num.to_i
 end
 
 def rotN(cha,num)
 puts "character : "
-#cha = gets
 result = ""
 cha.split(//).each_with_index do |s,i|
 end
