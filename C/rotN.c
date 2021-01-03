@@ -2,29 +2,28 @@
 #include<stdlib.h>
 #include<time.h>
 
-void getN(int *N){
+int getN(){
   srand(time(NULL));
-  *N = rand() % 13 + 1;
+  int N = rand() % 13 + 1;
   printf("今回はROT%dです\n",*N);
+  return N;
 }
 
-void rot(int *N){
+void rot(int N){
   char cha;
   printf("文字列を入力してください\n");
   while((cha = getchar()) != '\n'){
-    if(cha > 0x7a - *N){
-      cha = cha - 26 + *N;
+    if(cha > 0x7a - N){
+      cha = cha - 26 + N;
     } else{
-      cha += *N;
+      cha += N;
     }
       printf("%c",cha);
   }
 }
 
 int main(){
-  int N;
-  getN(&N);
-  rot(&N);
+  rot(getN());
   printf("\n");
   return 0;  
 }
