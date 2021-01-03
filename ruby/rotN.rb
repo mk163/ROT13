@@ -24,8 +24,7 @@ return result
 end
 
 def main
-  char = "kokoasdfrugb"
-  rotN(char,rand)
+  rotN(rand)
 end
 
 main
