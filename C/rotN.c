@@ -5,7 +5,7 @@
 void getN(int *N){
   srand(time(NULL));
   *N = rand() % 13 + 1;
-  printf("N = %d\n",*N);
+  printf("今回はN%dです\n",*N);
 }
 
 void rot(int *N){
