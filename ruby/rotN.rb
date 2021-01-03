@@ -5,8 +5,9 @@ puts "今回はROT" + num.to_s + "です"
 return num.to_i
 end
 
-def rotN(cha,num)
-puts "character : "
+def rotN(num)
+puts "文字列を入力してください"
+cha = gets
 result = ""
 cha.split(//).each_with_index do |s,i|
 end
