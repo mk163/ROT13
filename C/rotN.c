@@ -10,6 +10,7 @@ void getN(int *N){
 
 void rot(int *N){
   char cha;
+  printf("文字列を入力してください\n");
   while((cha = getchar()) != '\n'){
     if(cha > 0x7a - *N){
       cha = cha - 26 + *N;
