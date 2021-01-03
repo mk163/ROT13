@@ -15,8 +15,8 @@ def rotN(N,cha):
     return result
 
 def main():
+    N = random.randint(1,13)
     print('今回はROT' + str(N) + 'です')
-
     print("文字列を入力してください")
     cha = input()
 
