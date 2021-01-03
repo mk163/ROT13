@@ -15,7 +15,7 @@ def rotN(N,cha):
     return result
 
 def main():
-    print('N = ' + str(N))
+    print('今回はROT' + str(N) + 'です')
 
     print("文字列を入力してください")
     cha = input()
